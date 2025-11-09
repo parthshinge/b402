@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>b402 - Open Payment Standard on BNB Chain</title>
+    <title>b402 - HTTP requests that pay on BNB Chain</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -14,12 +15,12 @@
         <div class="container">
             <div class="logo">b402</div>
             <div class="nav-links">
-                <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
-                <a href="#use-cases">Use Cases</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
                 <a href="#faq">FAQ</a>
                 <a href="https://docs.b402.ai" target="_blank" class="btn btn-outline">Documentation</a>
-                <a href="https://github.com/Vistara-Labs/b402" target="_blank" class="btn btn-primary">GitHub</a>
+                <a href="#" id="connect-wallet" class="btn btn-primary">Connect Wallet</a>
             </div>
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -30,41 +31,16 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h1>Decentralized Payment Infrastructure for BNB Chain</h1>
-            <p class="subtitle">Build scalable, secure, and efficient payment solutions with b402's open payment standard</p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">
-                        <span class="loading-spinner"></span>
-                    </span>
-                    <span class="stat-label">Avg. Transaction Cost</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">
-                        <span class="loading-spinner"></span>
-                    </span>
-                    <span class="stat-label">Network TPS</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">
-                        <span class="stat-icon">⏱️</span> <span class="confirmation-time">~3s</span>
-                    </span>
-                    <span class="stat-label">Avg. Confirmation</span>
-                </div>
-                <div class="stat additional-stat">
-                    <span class="stat-number">
-                        <span class="loading-spinner"></span>
-                        <span class="change"></span>
-                    </span>
-                    <span class="stat-label">BNB Price</span>
-                </div>
+            <h1>HTTP requests that pay—<br>without leaving your domain.</h1>
+            <p class="subtitle">Not another hosted paywall — a domain-native protocol layer on BNB Chain</p>
+            
+            <div class="hero-cta">
+                <a href="#get-started" class="btn btn-primary btn-lg">Get Started</a>
+                <a href="#how-it-works" class="btn btn-outline btn-lg">How It Works →</a>
             </div>
-            <div class="cta-buttons">
-                <a href="#demo" class="btn btn-primary">View Demo</a>
-                <a href="https://docs.b402.ai" target="_blank" class="btn btn-outline">Documentation</a>
-                <a href="https://github.com/parthshinge/b402" target="_blank" class="btn btn-ghost">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+            
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Blockchain Technology">
             </div>
         </div>
         <div class="hero-illustration">
@@ -74,7 +50,198 @@
         </div>
     </header>
 
-<!-- Features Section -->
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Feature highlights</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise-Grade Security</h3>
+                    <p>Bank-level encryption and multi-signature wallets ensure your transactions are protected with the highest security standards.</p>
+                    <span class="feature-tag">Compliance Ready</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>High Performance</h3>
+                    <p>Process thousands of transactions per second with our optimized blockchain infrastructure and edge caching.</p>
+                    <span class="feature-tag">Low Latency</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Seamless Integration</h3>
+                    <p>RESTful APIs and comprehensive SDKs for easy integration with your existing systems and workflows.</p>
+                    <span class="feature-tag">Developer Friendly</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Advanced Analytics</h3>
+                    <p>Real-time insights and reporting tools to track transactions, monitor performance, and optimize your payment flows.</p>
+                    <span class="feature-tag">Data-Driven</span>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Full Transaction Dashboard</h3>
+                    <p>Monitor and manage all payments in real-time with our intuitive dashboard.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Flexible Monetization</h3>
+                    <p>Set your own pricing models and payment terms with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="section bg-light">
+        <div class="container">
+            <h2>One simple fee for verified API calls</h2>
+            <p class="section-subtitle">Transparent pricing with no hidden fees</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>For Sellers</h3>
+                    <div class="price">5%</div>
+                    <p class="price-subtitle">per successful transaction</p>
+                    <ul class="pricing-features">
+                        <li>Unlimited API endpoints</li>
+                        <li>Custom domains</li>
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Start Selling</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>For Buyers</h3>
+                    <div class="price">Free</div>
+                    <p class="price-subtitle">to integrate and use</p>
+                    <ul class="pricing-features">
+                        <li>No setup fees</li>
+                        <li>Pay-as-you-go</li>
+                        <li>Usage analytics</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Start Building</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Why keep payments under our own domain?</h3>
+                    <p>Maintaining your own domain for payments preserves your brand identity and user trust. It eliminates the need to redirect users to third-party payment processors, creating a seamless experience.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do clients or servers manage private keys?</h3>
+                    <p>Private keys are securely managed by Privy's infrastructure. Neither clients nor servers have direct access to private keys, ensuring maximum security while maintaining ease of use.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can users bring their own wallet?</h3>
+                    <p>Yes! While we provide seamless wallet creation through Privy, we also support integration with external wallets for users who prefer to manage their own keys.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do agents need UI to pay?</h3>
+                    <p>No. Our system is designed to work seamlessly with autonomous agents. Payments can be handled programmatically without any user interface required.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How are transactions monitored?</h3>
+                    <p>All transactions are recorded on the BNB Chain and can be monitored in real-time through our dashboard, providing complete transparency and auditability.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What about compliance and KYC?</h3>
+                    <p>We provide tools to help with compliance, including optional KYC integration. However, the level of KYC required is up to each individual implementation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2>Ready to Get Started?</h2>
+            <p class="cta-subtitle">Join the future of paid API access on BNB Chain</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-light btn-lg">Start Building</a>
+                <a href="https://docs.b402.ai" target="_blank" class="btn btn-outline-light btn-lg">Read Documentation</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">b402</div>
+                <p>Open Payment Standard on BNB Chain</p>
+                <div class="social-links">
+                    <a href="https://github.com/Vistara-Labs/b402" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/b402" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://discord.gg/b402" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="https://docs.b402.ai" target="_blank">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Guides</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 b402. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <section id="features" class="section">
         <div class="container">
             <h2>Core Features</h2>
