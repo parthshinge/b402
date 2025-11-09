@@ -34,18 +34,29 @@
             <p class="subtitle">Build scalable, secure, and efficient payment solutions with b402's open payment standard</p>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">0.01¢</span>
+                    <span class="stat-number">
+                        <span class="loading-spinner"></span>
+                    </span>
                     <span class="stat-label">Avg. Transaction Cost</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">5000+</span>
-                    <span class="stat-label">TPS Capacity</span>
+                    <span class="stat-number">
+                        <span class="loading-spinner"></span>
+                    </span>
+                    <span class="stat-label">Network TPS</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">
-                        <span class="stat-icon">⏱️</span> Instant
+                        <span class="stat-icon">⏱️</span> <span class="confirmation-time">~3s</span>
                     </span>
-                    <span class="stat-label">Settlement</span>
+                    <span class="stat-label">Avg. Confirmation</span>
+                </div>
+                <div class="stat additional-stat">
+                    <span class="stat-number">
+                        <span class="loading-spinner"></span>
+                        <span class="change"></span>
+                    </span>
+                    <span class="stat-label">BNB Price</span>
                 </div>
             </div>
             <div class="cta-buttons">
@@ -243,5 +254,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="blockchain.js"></script>
 </body>
 </html>
